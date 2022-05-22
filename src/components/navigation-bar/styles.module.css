@@ -38,6 +38,7 @@
   align-items: center;
   padding: 2rem 1rem;
   background-color: rgba(156, 154, 154, 0.13);
+  backdrop-filter: blur(10px);
   max-width: max-content;
 }
 .links_container a {
