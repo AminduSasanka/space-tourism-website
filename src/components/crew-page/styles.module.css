@@ -28,6 +28,7 @@ body {
 .heading span:nth-child(1) {
   margin-right: 1rem;
   color: var(--clr-text-secondary);
+  font-weight: bold;
 }
 
 /* crew container css--------------------------------------------------------------------- */
