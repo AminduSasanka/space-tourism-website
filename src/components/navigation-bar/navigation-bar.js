@@ -37,7 +37,7 @@ const NavigationBar = () => {
             <b>02</b>Crew
           </a>
           <a href="">
-            <b>03</b>Tehnology
+            <b>03</b>Technology
           </a>
         </div>
         {/* side pannel for mobile devices */}
