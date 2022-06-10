@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import NavigationBar from "../navigation-bar/navigation-bar";
 
@@ -17,7 +18,9 @@ const HomePage = () => {
           </p>
         </div>
         <div className={styles.button_container}>
-          <button>Explore</button>
+          <Link to="/destinations">
+            <button>Explore</button>
+          </Link>
         </div>
       </div>
     </section>

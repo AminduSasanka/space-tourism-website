@@ -3,6 +3,7 @@ import logo from "../../assets/shared/logo.svg";
 import hamburger from "../../assets/shared/icon-hamburger.svg";
 import closeBtn from "../../assets/shared/icon-close.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isShowSidePannel, setIsShowSidePannel] = useState(false);
@@ -16,9 +17,9 @@ const NavigationBar = () => {
       <section className={styles.nav_container}>
         {/* logo and hamburger button */}
         <div className={styles.logo}>
-          <a href="">
+          <Link to="/">
             <img src={logo} alt="" />
-          </a>
+          </Link>
           <button onClick={toggleSidePannel}>
             <img src={hamburger} alt="" />
           </button>
@@ -27,18 +28,18 @@ const NavigationBar = () => {
         <div className={styles.line}></div>
         {/* navigation links */}
         <div className={styles.links_container}>
-          <a href="">
+          <Link to="/">
             <b>00</b>Home
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/destinations">
             <b>01</b>Destination
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/crew">
             <b>02</b>Crew
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/technology">
             <b>03</b>Technology
-          </a>
+          </Link>
         </div>
         {/* side pannel for mobile devices */}
         <SidePannel
@@ -62,18 +63,18 @@ const SidePannel = ({ isShowSidePannel, toggleSidePannel }) => {
       <button onClick={toggleSidePannel}>
         <img src={closeBtn} alt="" />
       </button>
-      <a href="">
+      <Link to="/">
         <b>00</b>Home
-      </a>
-      <a href="">
+      </Link>
+      <Link to="/destinations">
         <b>01</b>Destination
-      </a>
-      <a href="">
+      </Link>
+      <Link to="/crew">
         <b>02</b>Crew
-      </a>
-      <a href="">
-        <b>03</b>Tehnology
-      </a>
+      </Link>
+      <Link to="/technology">
+        <b>03</b>Technology
+      </Link>
     </div>
   );
 };

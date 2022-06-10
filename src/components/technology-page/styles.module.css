@@ -96,9 +96,6 @@
   .techs_wrap {
     background-image: url("../../assets/technology/background-technology-desktop.jpg");
   }
-  .heading {
-    /* max-width: 1150px; */
-  }
   .techs_container {
     flex-direction: row-reverse;
     gap: 1rem;

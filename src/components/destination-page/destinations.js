@@ -16,10 +16,12 @@ const Destinations = () => {
       <section className={styles.destinations_container}>
         <NavigationBar></NavigationBar>
         <div className={styles.info_container}>
-          <p className="lead text-center text-light mb-5">
-            <span>01</span>
-            <span>pick your destination</span>
-          </p>
+          <div className={styles.heading}>
+            <p className="lead text-center text-light mb-5">
+              <span>01</span>
+              <span>pick your destination</span>
+            </p>
+          </div>
           {/* tabs container */}
           <div className={styles.tabs_container}>
             {destinations.map((destination, index) => {
@@ -54,7 +56,6 @@ const Destinations = () => {
 const Destination = ({ showingIndex }) => {
   const { name, images, description, distance, travel } =
     data.destinations[showingIndex];
-  const path = images.png;
 
   return (
     <>
