@@ -99,16 +99,36 @@ const SidePannel = ({ isShowSidePannel, toggleSidePannel }) => {
       <button onClick={toggleSidePannel}>
         <img src={closeBtn} alt="" />
       </button>
-      <NavLink to="/">
+      <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive ? { borderLeft: "solid 3px #fff" } : { border: "none" }
+        }
+      >
         <b>00</b>Home
       </NavLink>
-      <NavLink to="/destinations">
+      <NavLink
+        to="/destinations"
+        style={({ isActive }) =>
+          isActive ? { borderLeft: "solid 3px #fff" } : { border: "none" }
+        }
+      >
         <b>01</b>Destination
       </NavLink>
-      <NavLink to="/crew">
+      <NavLink
+        to="/crew"
+        style={({ isActive }) =>
+          isActive ? { borderLeft: "solid 3px #fff" } : { border: "none" }
+        }
+      >
         <b>02</b>Crew
       </NavLink>
-      <NavLink to="/technology">
+      <NavLink
+        to="/technology"
+        style={({ isActive }) =>
+          isActive ? { borderLeft: "solid 3px #fff" } : { border: "none" }
+        }
+      >
         <b>03</b>Technology
       </NavLink>
     </div>

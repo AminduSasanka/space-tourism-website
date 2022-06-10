@@ -93,12 +93,14 @@
 .links_container_side a {
   text-decoration: none;
   margin: 1.2rem 2rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   text-align: left;
   text-transform: capitalize;
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 3px;
+  border-left: solid 3px transparent;
+  padding-left: 1rem;
 }
 .links_container_side a b {
   margin-right: 15px;
