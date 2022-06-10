@@ -36,10 +36,16 @@
   display: none;
   justify-content: flex-end;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 0 1rem;
   background-color: rgba(156, 154, 154, 0.13);
   backdrop-filter: blur(10px);
   max-width: max-content;
+}
+.links_container div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
 }
 .links_container a {
   text-decoration: none;
@@ -48,11 +54,16 @@
   font-size: 14px;
   font-weight: 200;
   letter-spacing: 3px;
-  margin-inline: 1.5rem;
+  padding: 2rem 1rem;
+  margin-inline: 0.5rem;
+  border-bottom: solid 3px transparent;
 }
 .links_container a b {
   display: none;
   margin-right: 8px;
+}
+.links_container a:hover {
+  border-bottom: solid 3px #fff !important;
 }
 
 /* side pannel css-------------------------------------- */

@@ -83,7 +83,7 @@
 
 @media screen and (min-width: 996px) {
   .main_container {
-    max-width: 80%;
+    max-width: 1200px;
     margin-inline: auto;
   }
   .info_container h3 {

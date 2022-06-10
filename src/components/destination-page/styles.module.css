@@ -17,7 +17,7 @@
   margin-top: 2rem;
 }
 .heading {
-  max-width: 1050px;
+  width: clamp(280px, 90%, 1050px);
   margin-inline: auto;
 }
 .heading p span:nth-child(1) {
@@ -28,7 +28,6 @@
   color: rgb(169, 160, 160);
 }
 .heading p span:nth-child(2) {
-  font-family: "Barlow Condensed", sans-serif;
   font-size: 1.3rem;
   font-weight: lighter;
   text-transform: uppercase;

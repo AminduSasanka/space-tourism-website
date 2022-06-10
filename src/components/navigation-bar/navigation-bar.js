@@ -3,7 +3,7 @@ import logo from "../../assets/shared/logo.svg";
 import hamburger from "../../assets/shared/icon-hamburger.svg";
 import closeBtn from "../../assets/shared/icon-close.svg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isShowSidePannel, setIsShowSidePannel] = useState(false);
@@ -28,18 +28,54 @@ const NavigationBar = () => {
         <div className={styles.line}></div>
         {/* navigation links */}
         <div className={styles.links_container}>
-          <Link to="/">
-            <b>00</b>Home
-          </Link>
-          <Link to="/destinations">
-            <b>01</b>Destination
-          </Link>
-          <Link to="/crew">
-            <b>02</b>Crew
-          </Link>
-          <Link to="/technology">
-            <b>03</b>Technology
-          </Link>
+          <div>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive
+                  ? { borderBottom: "solid 3px #fff" }
+                  : { border: "none" }
+              }
+            >
+              <b>00</b>Home
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/destinations"
+              style={({ isActive }) =>
+                isActive
+                  ? { borderBottom: "solid 3px #fff" }
+                  : { border: "none" }
+              }
+            >
+              <b>01</b>Destination
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/crew"
+              style={({ isActive }) =>
+                isActive
+                  ? { borderBottom: "solid 3px #fff" }
+                  : { border: "none" }
+              }
+            >
+              <b>02</b>Crew
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/technology"
+              style={({ isActive }) =>
+                isActive
+                  ? { borderBottom: "solid 3px #fff" }
+                  : { border: "none" }
+              }
+            >
+              <b>03</b>Technology
+            </NavLink>
+          </div>
         </div>
         {/* side pannel for mobile devices */}
         <SidePannel
@@ -63,18 +99,18 @@ const SidePannel = ({ isShowSidePannel, toggleSidePannel }) => {
       <button onClick={toggleSidePannel}>
         <img src={closeBtn} alt="" />
       </button>
-      <Link to="/">
+      <NavLink to="/">
         <b>00</b>Home
-      </Link>
-      <Link to="/destinations">
+      </NavLink>
+      <NavLink to="/destinations">
         <b>01</b>Destination
-      </Link>
-      <Link to="/crew">
+      </NavLink>
+      <NavLink to="/crew">
         <b>02</b>Crew
-      </Link>
-      <Link to="/technology">
+      </NavLink>
+      <NavLink to="/technology">
         <b>03</b>Technology
-      </Link>
+      </NavLink>
     </div>
   );
 };

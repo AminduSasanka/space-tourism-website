@@ -15,13 +15,13 @@ const Destinations = () => {
     <>
       <section className={styles.destinations_container}>
         <NavigationBar></NavigationBar>
+        <div className={styles.heading}>
+          <p className="text-center text-light mb-5">
+            <span>01</span>
+            <span>pick your destination</span>
+          </p>
+        </div>
         <div className={styles.info_container}>
-          <div className={styles.heading}>
-            <p className="lead text-center text-light mb-5">
-              <span>01</span>
-              <span>pick your destination</span>
-            </p>
-          </div>
           {/* tabs container */}
           <div className={styles.tabs_container}>
             {destinations.map((destination, index) => {
